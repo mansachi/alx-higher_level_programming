@@ -1,0 +1,33 @@
+/** This is a prototype lists.h code **/
+
+#ifndef LISTS_H
+#define LISTS_H
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+
+/**
+ * struct listint_s - this is a singly linked list
+ * @n: integer only
+ * @next: this points to the next node
+ *
+ * Description: this is a  singly linked list node structure
+ * for Alx  project
+ */
+
+typedef struct listint_s
+{
+	int n; /** data of int **/
+	struct listint_s *next;
+} listint_t;
+
+size_t print_listint(const listint_t *h);
+
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+
+void reverse_listint(listint_t **head);
+int is_palindrome(listint_t **head);
+
+#endif /* end of  LISTS_H*/
