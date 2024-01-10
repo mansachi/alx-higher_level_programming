@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# code for 0x02-python-import_modules
+# code for 0-add.py
 
 if __name__ == "__main__":
     """Print the sum of one and two."""
@@ -7,4 +7,4 @@ if __name__ == "__main__":
 
     a = 1
     b = 2
-    print("{} + {} = {}".format(a, b, add(a, b)))
+    print("{} + {} = {}".format(a, b, add(a, b))) # end of code
